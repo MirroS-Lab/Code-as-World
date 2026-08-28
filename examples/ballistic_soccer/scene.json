@@ -1,0 +1,415 @@
+{
+  "schema_version": 1,
+  "coordinate_system": {
+    "handedness": "right",
+    "length_unit": "meter",
+    "scale_status": "metric",
+    "up_axis": "y"
+  },
+  "execution_mode": "physics",
+  "timeline": {
+    "fps": 29.969730572122224,
+    "frame_count": 60,
+    "time_basis": "source PTS seconds"
+  },
+  "camera": {
+    "model": "perspective",
+    "binding": {
+      "T_world_camera_first": [
+        [
+          0.9999987483024597,
+          -0.0007141341920942068,
+          0.001421109540387988,
+          0.002699581440538168
+        ],
+        [
+          -0.0007136191707104445,
+          -0.9999996423721313,
+          -0.00036290480056777596,
+          0.0007972674211487174
+        ],
+        [
+          0.0014213679824024439,
+          0.0003618901828303933,
+          -0.999998927116394,
+          0.005031634122133255
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "frame_count": 60,
+      "image_size": [
+        280,
+        504
+      ],
+      "intrinsics_first": [
+        [
+          494.1910705566406,
+          0.0,
+          252.0
+        ],
+        [
+          0.0,
+          483.5732727050781,
+          140.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection": "perspective",
+      "pts_seconds": [
+        0.066,
+        0.099367,
+        0.132733,
+        0.1661,
+        0.199467,
+        0.232833,
+        0.2662,
+        0.299567,
+        0.332933,
+        0.3663,
+        0.399667,
+        0.433033,
+        0.4664,
+        0.499767,
+        0.533133,
+        0.5665,
+        0.599867,
+        0.633233,
+        0.6666,
+        0.699967,
+        0.733333,
+        0.7667,
+        0.800067,
+        0.833433,
+        0.8668,
+        0.900167,
+        0.933533,
+        0.9669,
+        1.000267,
+        1.033633,
+        1.067,
+        1.100367,
+        1.133733,
+        1.1671,
+        1.200467,
+        1.233833,
+        1.2672,
+        1.300567,
+        1.333933,
+        1.3673,
+        1.400667,
+        1.434033,
+        1.4674,
+        1.500767,
+        1.534133,
+        1.5675,
+        1.600867,
+        1.634233,
+        1.6676,
+        1.700967,
+        1.734333,
+        1.7677,
+        1.801067,
+        1.834433,
+        1.8678,
+        1.901167,
+        1.934533,
+        1.9679,
+        2.001267,
+        2.034633
+      ]
+    }
+  },
+  "objects": [
+    {
+      "id": "ball",
+      "role": "dynamic_rigid",
+      "semantic_label": "\u8db3\u7403",
+      "extent": [
+        0.2196042402061299,
+        0.2196042402061299,
+        0.2196042402061299
+      ],
+      "initial_state": {
+        "angular_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "linear_velocity": [
+          1.3552338287520653,
+          -0.6983782887575889,
+          0.00507999744185685
+        ],
+        "position": [
+          -1.563215794156141,
+          0.8104922155577554,
+          -2.4312423355321666
+        ],
+        "rotation_xyzw": [
+          -0.6651061567570307,
+          0.327238062233603,
+          -0.12400743191585774,
+          0.6596750773669736
+        ]
+      },
+      "motion_execution": "physics",
+      "physics_recovered": true,
+      "mesh": {
+        "alignment_scale": 1.0,
+        "alignment_used": true,
+        "appearance": "soccer_panels",
+        "geometry_semantics": "deterministic_semantic_sphere_primitive",
+        "local_bounds_min": [
+          -0.12250386476625279,
+          -0.12250386476625279,
+          -0.12250386476625279
+        ],
+        "local_bounds_max": [
+          0.12250386476625279,
+          0.12250386476625279,
+          0.12250386476625279
+        ],
+        "pose_frame_semantics": "mesh_aligned_object",
+        "primitive_type": "sphere",
+        "procedural_primitive": true,
+        "render_local_extent": [
+          0.24500773,
+          0.24500773,
+          0.24500773
+        ],
+        "render_scale": 0.8963155579055807,
+        "render_scale_xyz": [
+          0.8963155579055807,
+          0.8963155579055807,
+          0.8963155579055807
+        ],
+        "asset": "assets/ball.obj"
+      },
+      "physics": {
+        "body_type": "dynamic",
+        "collision": {
+          "enabled": true,
+          "radius": 0.10980212010306495,
+          "scale_group": 0,
+          "shape": "sphere",
+          "source": "source_mask_angular_radius_visible_support_contact"
+        },
+        "contact_damping": 15.340151689310062,
+        "contact_damping_ratio": 0.04,
+        "contact_parameterization": "direct_stiffness_damping",
+        "contact_stiffness": 10000.0,
+        "friction": 0.0,
+        "mass": 3.6768789664225365,
+        "natural_dynamics": true,
+        "restitution": 0.8059094118124696,
+        "rolling_friction": 1e-06
+      }
+    },
+    {
+      "id": "floor",
+      "role": "static_rigid",
+      "semantic_label": "\u5730\u9762",
+      "extent": [
+        2.222890615463257,
+        0.030757149681448936,
+        0.31273001432418823
+      ],
+      "initial_state": {
+        "position": [
+          0.012743509374558926,
+          -0.700855016708374,
+          -2.6733930110931396
+        ],
+        "rotation_xyzw": [
+          0.20022827368646187,
+          0.01208790800944399,
+          0.008448650041422322,
+          0.9796382705922488
+        ]
+      },
+      "motion_execution": "physics",
+      "physics_recovered": false,
+      "mesh": {
+        "alignment_scale": 1.1273337602615356,
+        "alignment_used": true,
+        "geometry_semantics": "sam3d_triangle_mesh",
+        "local_bounds_min": [
+          -0.9859061355030865,
+          -0.013641544894808517,
+          -0.13870338332122267
+        ],
+        "local_bounds_max": [
+          0.9859061355030865,
+          0.013641544894808517,
+          0.13870338332122267
+        ],
+        "pose_frame_semantics": "mesh_aligned_object",
+        "render_local_extent": [
+          1.9718122482299805,
+          0.2774067521095276,
+          0.027283089235424995
+        ],
+        "render_position_offset_world": [
+          0.48970251142664833,
+          -0.040608501147694875,
+          -0.32360391178920467
+        ],
+        "render_scale": 1.1273337602615356,
+        "render_scale_xyz": [
+          2.124126331136406,
+          1.3838056399365484,
+          1.8539235558537737
+        ],
+        "asset": "assets/floor.obj"
+      },
+      "physics": {
+        "body_type": "fixed",
+        "collision": {
+          "enabled": true,
+          "shape": "oriented_box_proxy",
+          "support_alignment_source": "gravity_aligned_planar_support_preserving_top_elevation",
+          "support_normal_world": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "support_plane_point_world": [
+            0.012743509374558926,
+            -0.6016231026556209,
+            -2.6733930110931396
+          ],
+          "support_proxy_extent": [
+            2.222890615463257,
+            0.030757149681448936,
+            0.6789615150135268
+          ],
+          "support_thin_axis": 1
+        },
+        "friction": 0.0,
+        "restitution": 0.1
+      }
+    }
+  ],
+  "collision_objects": [
+    "ball",
+    "floor"
+  ],
+  "contact_events": [
+    {
+      "external_wrench_applied": false,
+      "frame_index": 14,
+      "id": "native_contact_ball_floor_14",
+      "kind": "native_contact",
+      "normal_speed": -3.5734846195296424,
+      "objects": [
+        "ball",
+        "floor"
+      ],
+      "selection_source": "passive_mujoco_contact_transition",
+      "signed_gap": -0.02865542836929319,
+      "time_seconds": 0.533133
+    },
+    {
+      "external_wrench_applied": false,
+      "frame_index": 40,
+      "id": "native_contact_ball_floor_40",
+      "kind": "native_contact",
+      "normal_speed": -3.6415271663710302,
+      "objects": [
+        "ball",
+        "floor"
+      ],
+      "selection_source": "passive_mujoco_contact_transition",
+      "signed_gap": -0.00970530056895108,
+      "time_seconds": 1.400667
+    }
+  ],
+  "external_wrenches": [],
+  "ground": {
+    "collision_enabled": false,
+    "friction": 0.6,
+    "half_extent": [
+      30.0,
+      30.0
+    ],
+    "normal": [
+      -0.0,
+      1.0,
+      -0.0
+    ],
+    "point": [
+      0.0,
+      -0.6016231026556209,
+      0.0
+    ],
+    "source": "explicit_static_support_collision_proxy",
+    "support_object_ids": [
+      "floor"
+    ],
+    "thickness": 0.1,
+    "type": "slab"
+  },
+  "natural_dynamics": {
+    "enabled": true,
+    "mode": "passive_ballistic_contact",
+    "contact_response": "native_mujoco_collision_restitution",
+    "contact_parameterization": "direct_stiffness_damping",
+    "contact_stiffness": 10000.0,
+    "contact_damping": 15.340151689310062,
+    "restitution": 0.8059094118124696,
+    "solver_iterations": 100,
+    "time_step_seconds": 0.001,
+    "contact_event_count": 2,
+    "external_wrench_count": 0
+  },
+  "relations": [
+    {
+      "confidence": 0.98,
+      "object": "floor",
+      "subject": "ball",
+      "type": "above"
+    }
+  ],
+  "rendering": {
+    "background_kind": "synthetic",
+    "formal_source_render_unchanged": true
+  },
+  "simulator": {
+    "backend": "mujoco",
+    "gravity": [
+      0.0,
+      -9.228704973337999,
+      0.0
+    ],
+    "gravity_units": "m/s2",
+    "integrator": "implicitfast",
+    "scene_path": "scene.xml",
+    "solver_iterations": 100,
+    "time_step": 0.001
+  },
+  "solver": {
+    "kind": "natural_ballistic_rollout",
+    "requested_execution_mode": "physics",
+    "derived_execution_mode": "physics",
+    "numeric_authority": "mujoco",
+    "per_object_execution": {
+      "ball": "physics",
+      "floor": "physics"
+    },
+    "external_wrench_policy": {
+      "external_wrench_count": 0,
+      "external_wrenches": [],
+      "future_pose_replay": false,
+      "mode": "disabled"
+    }
+  }
+}

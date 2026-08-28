@@ -1,0 +1,4 @@
+*.obj -diff
+*.mp4 binary
+*.npz binary
+* text=auto eol=lf

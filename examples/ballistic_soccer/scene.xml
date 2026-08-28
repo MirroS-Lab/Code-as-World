@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="evolving_real2sim_scene">
+  <compiler angle="radian" autolimits="true" balanceinertia="true"/>
+  <option timestep="0.001" gravity="0 0 -9.22870497334" integrator="implicitfast" iterations="100"/>
+  <visual>
+    <global offwidth="960" offheight="540"/>
+  </visual>
+  <default>
+    <geom condim="4" friction="0.6 0.01 0.001" solref="0.01 1"/>
+  </default>
+  <asset>
+    <mesh name="ball_visual_mesh" file="assets/ball.obj" scale="0.896315557906 0.896315557906 0.896315557906"/>
+    <mesh name="floor_visual_mesh" file="assets/floor.obj" scale="2.12412633114 1.38380563994 1.85392355585"/>
+  </asset>
+  <worldbody>
+    <light name="key" pos="-4 -4 8" dir="0.4 0.4 -1" directional="true"/>
+    <light name="fill" pos="4 -2 5" dir="-0.5 0.2 -1" directional="true"/>
+    <body name="ball" pos="-1.56321579416 2.43124233553 0.810492215558" quat="0.659675077367 -0.665106156757 0.124007431916 0.327238062234">
+      <freejoint name="ball_free"/>
+      <geom name="ball_visual" type="mesh" mesh="ball_visual_mesh" rgba="0.741764705882 0.58862745098 0.321176470588 1" contype="0" conaffinity="0" density="0" group="0"/>
+      <geom name="ball_collision" type="sphere" size="0.109802120103" rgba="0 0 0 0" group="3" friction="0 1e-05 1e-06" solref="-10000 -15.3401516893" priority="1" mass="3.67687896642"/>
+    </body>
+    <body name="floor" pos="0.0127435093746 2.67339301109 -0.700855016708" quat="0.979638270592 0.200228273686 -0.00844865004142 0.0120879080094">
+      <geom name="floor_visual" type="mesh" mesh="floor_visual_mesh" rgba="0.722352941176 0.683529411765 0.765490196078 1" contype="0" conaffinity="0" density="0" group="0" pos="0.495189954615 0.268384660876 -0.170099013645"/>
+      <geom name="floor_collision" type="box" pos="0.00179395194422 0.0328787523 0.0771177792771" quat="0.979710505521 -0.20013217453 0.0104811253598 -0.00214105125745" size="1.11144530773 0.339480757507 0.0153785748407" rgba="0 0 0 0" group="3" friction="0 1e-05 1e-06" solref="0.01 0.9"/>
+    </body>
+  </worldbody>
+  <contact/>
+</mujoco>

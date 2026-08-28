@@ -1,0 +1,7 @@
+huggingface-hub>=0.34
+jinja2>=3.1
+numpy>=1.26
+qwen-vl-utils==0.0.14
+decord==0.6.0
+transformers==5.11.0
+vllm==0.19.1

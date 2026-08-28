@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+weights/
+
+outputs/*
+results/
+data/
+
+# Local credentials and logs.
+.env
+*.log
+
+# Large model and training artifacts.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
