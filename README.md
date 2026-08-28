@@ -13,7 +13,7 @@ Physical Reasoning</b>
 </p>
 
 <p align="center">
-  <a href="TODO(arxiv-link)"><img alt="Paper" src="https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white"></a>
+  <a href="https://mirros.ai/report/code-as-world.pdf"><img alt="Paper" src="https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white"></a>
   <a href="https://mirros-lab.github.io/code-as-world"><img alt="Project Page" src="https://img.shields.io/badge/Project-Page-5F38FF"></a>
   <a href="https://mirros.ai/blog/representing-physical-world"><img alt="Blog" src="https://img.shields.io/badge/MirroS-Blog-745AE8"></a>
   <a href="https://github.com/mirros-lab/code-as-world"><img alt="Code" src="https://img.shields.io/badge/GitHub-Code-181717?logo=github&logoColor=white"></a>
